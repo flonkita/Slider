@@ -116,6 +116,10 @@
     color: var(--color-dark);
     background-color: var(--color-light);
   }
+  footer > .w3c {
+    justify-content: center;
+    margin-block-start: 3rem;
+  }
   .site-header {
     position: sticky;
     inset-block-start: 0;
@@ -134,14 +138,18 @@
     gap: 16px;
   }
 
-  .site-header ul[role="navigation"] {
+  .site-header ul {
     list-style-type: none;
     padding-inline-start: 0;
   }
 
-  .site-header ul[role="navigation"] > li a {
+  .site-header ul > li a {
     padding: 12px 24px;
     display: block;
+  }
+
+  .site-header ul > li a:hover {
+    text-decoration-line: underline;
   }
 
   .site-header .logo {
@@ -201,17 +209,18 @@
     object-fit: contain;
   }
   .slide.active {
-    display: block;
+    display: block !important;
     animation: fadeIn 1.5s ease-in-out;
   }
   .slide.inactive {
-    display: block;
+    display: block !important;
     animation: fadeOut 1.5s ease-in-out;
     opacity: 0;
   }
   .prev,
   .next {
     cursor: pointer;
+    text-decoration: none;
     position: absolute;
     top: 50%;
     width: auto;
@@ -240,14 +249,19 @@
     background-color: #ffffffa1;
   }
 
-  .site-header ul[role="navigation"] {
+  .site-header ul {
     display: flex;
     gap: 16px;
   }
 
-  .site-header ul[role="navigation"] > li a {
+  .site-header ul > li a {
     padding: 0;
     display: inline;
+  }
+
+  .site-header ul > li a:hover {
+    text-decoration-line: underline;
+    text-decoration-color: purple;
   }
 
   .site-header a {
@@ -304,7 +318,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .site-header ul[role="navigation"] {
+  .site-header ul {
     display: flex;
     gap: 24px;
   }
