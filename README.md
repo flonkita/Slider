@@ -7,9 +7,11 @@ Notamment un menu "Burger" qui sera visible en vue mobile
 Les vues et les tailles sont variées entre les media queries donc à vous de voir les différences 😉
 
 Vue Mobile :
-![Vue mobile avec Menu Burger fermé](<Vue Desktop.png>)
+![Vue mobile avec Menu Burger fermé](<Vue Mobile.png>)
 
+Menu Burger ouvert sous vue Mobile : 
 ![Vue mobile avec Menu Burger ouvert](<Burger opened.png>)
+
 Vue Tablette :
 
 ![Vue Tablette](<Vue Tablet.png>)
